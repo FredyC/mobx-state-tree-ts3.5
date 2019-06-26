@@ -1,0 +1,15 @@
+{
+  "name": "new",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "mobx": "5.10.1",
+    "mobx-state-tree": "3.14.0"
+  },
+  "devDependencies": {
+    "typescript": "3.5.2"
+  },
+  "scripts": {
+    "test": "tsc --noEmit"
+  }
+}

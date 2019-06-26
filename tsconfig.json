@@ -1,0 +1,11 @@
+{
+  "include": ["./src/*"],
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es5",
+    "lib": ["esnext", "dom"],
+    "noEmit": true,
+    "strict": true
+  }
+}
