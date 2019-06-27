@@ -1,9 +1,9 @@
-import { getRoot, types } from 'mobx-state-tree'
+import { getRoot, types } from "mobx-state-tree"
 
-import { TRootModel } from './RootModel'
+import { TRootModel } from "./RootModel"
 
 export const BaseModel = types.model().views(self => ({
-  get root() {
+  get root(): TRootModel {
     return getRoot<TRootModel>(self)
   }
 }))

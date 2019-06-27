@@ -6,6 +6,9 @@ export const UserModel = BaseModel.named("User")
   .props({
     name: types.optional(types.string, "unknown")
   })
+  .volatile(() => ({
+    age: types.number
+  }))
   .views(self => ({
     get version() {
       return self.root.system.version
